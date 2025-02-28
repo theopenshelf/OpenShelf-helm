@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: backend
 spec:
-  type: { { .Values.backend.service.type | quote } }
+  type: {{ .Values.backend.service.type | quote }}
   selector:
     app: backend
   ports:
