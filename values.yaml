@@ -1,0 +1,40 @@
+# PostgreSQL settings
+postgresql:
+  enabled: false
+  primary:
+    persistence:
+      enabled: true
+      size: 10Gi
+
+# Backend settings
+backend:
+  enabled: false
+  image:
+    repository: ghcr.io/theopenshelf/platform-api
+    tag: latest
+  replicaCount: 2
+  service:
+    type: LoadBalancer
+    port: 8080
+  env:
+    DB_HOST: postgresql.platform.svc.cluster.local
+    DB_USER: openshelf_user
+    DB_NAME: openshelf
+
+ingress:
+  host: oshelf.org
+  certManagerClusterIssuer: letsencrypt-prod
+  secretName: letsencrypt-platform
+
+# Frontend settings
+frontend:
+  enabled: true
+  image:
+    repository: ghcr.io/theopenshelf/platform-ui
+    tag: latest
+  replicaCount: 1
+  service:
+    type: LoadBalancer
+    port: 8080
+  env:
+    API_URL: https://oshelf.org/api
