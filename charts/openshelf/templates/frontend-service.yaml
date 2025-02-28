@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: frontend
 spec:
-  type: { { .Values.frontend.service.type } }
+  type: {{ .Values.frontend.service.type | quote }}
   selector:
     app: frontend
   ports:
