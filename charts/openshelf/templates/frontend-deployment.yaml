@@ -22,7 +22,8 @@ spec:
             - name: API_URL
               value: "{{ .Values.frontend.env.API_URL }}"
           ports:
-            - containerPort: 80
+            - name: http-server
+              containerPort: 80
           livenessProbe:
             httpGet:
               path: /
