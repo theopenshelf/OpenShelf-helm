@@ -34,7 +34,8 @@ frontend:
     tag: latest
   replicaCount: 1
   service:
-    type: LoadBalancer
-    port: 8080
+    type: NodePort
+    port: 80
+    nodePort: 30085
   env:
     API_URL: https://oshelf.org/api

@@ -11,7 +11,7 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: http-server
-      {{- if .Values.frontend.service.nodePort }}
+      {{- if eq .Values.frontend.service.type "NodePort" }}
       nodePort: {{ .Values.frontend.service.nodePort }}
       {{- end }}
 {{- end }}
