@@ -36,6 +36,6 @@ frontend:
   service:
     type: NodePort
     port: 80
-    nodePort: 30085
+    nodePort: 30095
   env:
     API_URL: https://oshelf.org/api
