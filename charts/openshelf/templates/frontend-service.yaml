@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: frontend
 spec:
-  type: {{ .Values.frontend.service.type | quote }}
+  type: {{ .Values.frontend.service.type }}
   selector:
     app: frontend
   ports:
