@@ -32,7 +32,7 @@ spec:
             - name: SPRING_DATASOURCE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgresql-password
+                  name: postgresql-secret
                   key: postgresql-password
           ports:
             - name: http-server
