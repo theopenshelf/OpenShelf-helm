@@ -32,8 +32,8 @@ spec:
             - name: SPRING_DATASOURCE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgresql-secret
-                  key: password
+                  name: postgresql-password
+                  key: postgresql-password
           ports:
             - name: http-server
               containerPort: {{ .Values.backend.env.SERVER_PORT }}
