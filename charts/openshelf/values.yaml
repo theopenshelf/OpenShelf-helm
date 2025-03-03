@@ -1,13 +1,18 @@
 # PostgreSQL settings
 postgresql:
-  enabled: false
+  enabled: true
   primary:
     persistence:
       enabled: true
-      size: 10Gi
+      size: 10Gi# Or use a secret reference
   auth:
     username: openshelf_user
-    database: openshelf
+    existingSecret: postgresql-secret
+    secretKeys:
+      adminPasswordKey: postgresql-password
+      userPasswordKey: postgresql-password
+      replicationPasswordKey: postgresql-password
+
 # Backend settings
 backend:
   enabled: false

@@ -32,7 +32,7 @@ spec:
             - name: SPRING_DATASOURCE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: dev-oshelf-postgresql
+                  name: postgresql-secret
                   key: password
           ports:
             - name: http-server
