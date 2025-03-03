@@ -5,7 +5,9 @@ postgresql:
     persistence:
       enabled: true
       size: 10Gi
-
+  auth:
+    username: openshelf_user
+    database: openshelf
 # Backend settings
 backend:
   enabled: false
@@ -20,7 +22,8 @@ backend:
   env:
     # Spring properties
     SERVER_PORT: 8486
-    SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql.platform.svc.cluster.local:5432/theopenshelf
+    SPRING_DATASOURCE_USERNAME: openshelf_user
+    SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql.platform.svc.cluster.local:5432/openshelf
 
 ingress:
   host: oshelf.org

@@ -28,15 +28,12 @@ spec:
             - name: SPRING_DATASOURCE_URL
               value: "{{ .Values.backend.env.SPRING_DATASOURCE_URL }}"
             - name: SPRING_DATASOURCE_USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: postgres-secret
-                  key: username
+              value: "{{ .Values.backend.env.SPRING_DATASOURCE_USERNAME }}"
             - name: SPRING_DATASOURCE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
-                  key: password
+                  name: dev-oshelf-postgresql
+                  key: postgres-password
           ports:
             - name: http-server
               containerPort: {{ .Values.backend.env.SERVER_PORT }}
