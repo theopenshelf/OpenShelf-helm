@@ -5,11 +5,12 @@ kind: Service
 metadata:
   name: backend
 spec:
-  type: {{ .Values.backend.service.type | quote }}
+  type: {{ .Values.backend.service.type }}
   selector:
     app: backend
   ports:
     - protocol: TCP
-      port: 8080
+      port: {{ .Values.backend.env.SERVER_PORT }}
       targetPort: http-server
+      nodePort: {{ .Values.backend.service.nodePort }}
 {{- end }}

@@ -14,12 +14,13 @@ backend:
     tag: latest
   replicaCount: 2
   service:
-    type: LoadBalancer
-    port: 8080
+    type: NodePort
+    port: 80
+    nodePort: 30096
   env:
-    DB_HOST: postgresql.platform.svc.cluster.local
-    DB_USER: openshelf_user
-    DB_NAME: openshelf
+    # Spring properties
+    SERVER_PORT: 8486
+    SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql.platform.svc.cluster.local:5432/theopenshelf
 
 ingress:
   host: oshelf.org
