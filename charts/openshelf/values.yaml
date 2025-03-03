@@ -22,6 +22,7 @@ backend:
   env:
     # Spring properties
     SERVER_PORT: 8486
+    SPRING_PROFILES_ACTIVE: dev
     SPRING_DATASOURCE_USERNAME: openshelf_user
     SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql.platform.svc.cluster.local:5432/openshelf
 

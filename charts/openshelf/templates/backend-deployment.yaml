@@ -20,7 +20,7 @@ spec:
           image: "{{ .Values.backend.image.repository }}:{{ .Values.backend.image.tag }}"
           env:
             - name: SPRING_PROFILES_ACTIVE
-              value: json-logging
+              value: {{ .Values.backend.env.SPRING_PROFILES_ACTIVE }}
             - name: JAVA_TOOL_OPTIONS
               value: "-XX:MaxRAMPercentage=70 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./heapdump"
             - name: SERVER_PORT
@@ -33,7 +33,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: dev-oshelf-postgresql
-                  key: postgres-password
+                  key: password
           ports:
             - name: http-server
               containerPort: {{ .Values.backend.env.SERVER_PORT }}
