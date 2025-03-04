@@ -6,6 +6,7 @@ postgresql:
       enabled: true
       size: 10Gi# Or use a secret reference
   auth:
+    database: openshelf
     username: openshelf_user
     existingSecret: postgresql-secret
     secretKeys:
@@ -16,7 +17,7 @@ postgresql:
     persistence:
       enabled: true
       size: 10Gi
-      
+
 # Backend settings
 backend:
   enabled: false
