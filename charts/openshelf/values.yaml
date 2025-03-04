@@ -12,7 +12,11 @@ postgresql:
       adminPasswordKey: postgresql-password
       userPasswordKey: postgresql-password
       replicationPasswordKey: postgresql-password
-
+  primary:
+    persistence:
+      enabled: true
+      size: 10Gi
+      
 # Backend settings
 backend:
   enabled: false
