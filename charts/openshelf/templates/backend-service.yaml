@@ -10,7 +10,7 @@ spec:
     app: backend
   ports:
     - protocol: TCP
-      port: {{ .Values.backend.env.SERVER_PORT }}
+      port: 80
       targetPort: http-server
       nodePort: {{ .Values.backend.service.nodePort }}
 {{- end }}
