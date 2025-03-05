@@ -59,6 +59,7 @@ frontend:
 
 flyway:
   enabled: true
+  url: jdbc:postgresql://postgresql.platform.svc.cluster.local:5432/openshelf
   image:
     repository: flyway/flyway
     tag: latest

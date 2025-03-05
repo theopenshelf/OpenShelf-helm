@@ -15,19 +15,20 @@ spec:
           args: ["migrate"]
           env:
             - name: FLYWAY_USER
-              value: {{ .Values.postgresql.auth.username }}
+              value: { { .Values.postgresql.auth.username } }
             - name: FLYWAY_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: {{ .Values.postgresql.auth.existingSecret }}
-                  key: {{ .Values.postgresql.auth.secretKeys.userPasswordKey }}
+                  name: { { .Values.postgresql.auth.existingSecret } }
+                  key:
+                    { { .Values.postgresql.auth.secretKeys.userPasswordKey } }
             - name: FLYWAY_URL
-              value: "jdbc:postgresql://{{ include "openshelf.fullname" . }}-postgresql:5432/{{ .Values.postgresql.auth.database }}"
+              value: { { .Values.flyway.url } }
           volumeMounts:
             - name: sql
               mountPath: /flyway/sql
       volumes:
         - name: sql
           configMap:
-            name: {{ include "openshelf.fullname" . }}-flyway-sql
-      restartPolicy: Never 
+            name: openshelf-flyway-sql
+      restartPolicy: Never
