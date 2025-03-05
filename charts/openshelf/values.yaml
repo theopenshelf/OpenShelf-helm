@@ -56,3 +56,13 @@ frontend:
     nodePort: 30095
   env:
     API_URL: https://oshelf.org/api
+
+flyway:
+  enabled: true
+  image:
+    repository: flyway/flyway
+    tag: latest
+    pullPolicy: IfNotPresent
+  config:
+    schemas: public
+    locations: "filesystem:/flyway/sql"
