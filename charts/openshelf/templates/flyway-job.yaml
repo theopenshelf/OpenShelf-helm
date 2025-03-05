@@ -24,6 +24,13 @@ spec:
                     {{ .Values.postgresql.auth.secretKeys.userPasswordKey }}
             - name: FLYWAY_URL
               value: {{ .Values.flyway.url }}
+            - name: FLYWAY_BASELINE_ON_MIGRATE
+              value: "true"
+            - name: FLYWAY_CLEAN_DISABLED
+              value: "false"
+            # Optional: if you want to clean before migrating
+            - name: FLYWAY_CLEAN_ON_VALIDATION_ERROR
+              value: "true"
           volumeMounts:
             - name: sql
               mountPath: /flyway/sql
