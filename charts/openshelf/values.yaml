@@ -48,6 +48,8 @@ frontend:
     repository: ghcr.io/theopenshelf/platform-ui
     tag: latest
   replicaCount: 1
+  theme:
+    configMapName: frontend-theme
   service:
     type: NodePort
     port: 80

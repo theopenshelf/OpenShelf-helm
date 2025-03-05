@@ -19,8 +19,14 @@ spec:
         - name: frontend
           image: "{{ .Values.frontend.image.repository }}:{{ .Values.frontend.image.tag }}"
           env:
-            - name: API_URL
-              value: "{{ .Values.frontend.env.API_URL }}"
+            - name: API_BASE_PATH
+              value: "https://{{ .Values.ingress.host }}/api"
+            - name: USE_MOCK_API
+              value: "false"
+            - name: DEMO_MODE
+              value: "false"
+            - name: DEFAULT_LOCALE
+              value: "fr"
           ports:
             - name: http-server
               containerPort: 80
@@ -36,4 +42,12 @@ spec:
             httpGet:
               path: /
               port: 80
+          volumeMounts:
+            - name: custom-theme
+              mountPath: /usr/share/nginx/html/assets/theme/custom-theme.scss
+              subPath: custom-theme.scss
+      volumes:
+        - name: custom-theme
+          configMap:
+            name: {{ .Values.frontend.theme.configMapName | default "frontend-theme" }}
 {{- end }}
