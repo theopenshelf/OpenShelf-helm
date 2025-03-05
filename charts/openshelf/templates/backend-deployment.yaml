@@ -36,6 +36,8 @@ spec:
                 secretKeyRef:
                   name: postgresql-secret
                   key: postgresql-password
+            - name: MANAGEMENT_ENDPOINTS_WEB_BASE_PATH
+              value: "/api/actuator"
           ports:
             - name: http-server
               containerPort: {{ .Values.backend.env.SERVER_PORT }}
