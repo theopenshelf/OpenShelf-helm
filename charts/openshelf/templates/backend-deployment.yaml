@@ -43,7 +43,7 @@ spec:
               containerPort: {{ .Values.backend.env.SERVER_PORT }}
           livenessProbe:
             httpGet:
-              path: /actuator/health
+              path: /api/actuator/health
               port: {{ .Values.backend.env.SERVER_PORT }}
             initialDelaySeconds: 300
             periodSeconds: 5
@@ -51,6 +51,6 @@ spec:
             initialDelaySeconds: 10
             periodSeconds: 2
             httpGet:
-              path: /actuator/health
+              path: /api/actuator/health
               port: {{ .Values.backend.env.SERVER_PORT }}
 {{- end }}
