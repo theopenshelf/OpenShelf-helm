@@ -9,11 +9,13 @@ spec:
   selector:
     app: backend
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 80
       targetPort: http-server
       nodePort: {{ .Values.backend.service.nodePort }}
-    - protocol: TCP
+    - name: debug
+      protocol: TCP
       port: 5005
       targetPort: debug
       nodePort: {{ .Values.backend.service.nodePortForDebug }}
