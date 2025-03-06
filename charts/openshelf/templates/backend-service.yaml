@@ -16,5 +16,5 @@ spec:
     - protocol: TCP
       port: 5005
       targetPort: debug
-      nodePort: {{ .Values.backend.service.nodePort }}
+      nodePort: {{ .Values.backend.service.nodePortForDebug }}
 {{- end }}
