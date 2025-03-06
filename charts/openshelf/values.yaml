@@ -20,7 +20,9 @@ postgresql:
 
 # Backend settings
 backend:
-  enabled: false
+  enabled: true
+  debug:
+    enabled: false  # Set to true in dev environment
   image:
     repository: ghcr.io/theopenshelf/platform-api
     tag: latest

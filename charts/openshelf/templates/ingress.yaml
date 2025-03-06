@@ -29,7 +29,22 @@ spec:
             port:
               number: 80
       {{- end }}
+  {{- if and .Values.backend.enabled .Values.backend.debug.enabled }}
+  - host: debug.{{ .Values.ingress.host }}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: backend
+            port:
+              number: 5005
+  {{- end }}
   tls:
     - hosts:
         - {{ .Values.ingress.host }}
+        {{- if and .Values.backend.enabled .Values.backend.debug.enabled }}
+        - debug.{{ .Values.ingress.host }}
+        {{- end }}
       secretName: {{ .Values.ingress.secretName }}

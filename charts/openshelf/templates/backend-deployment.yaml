@@ -41,6 +41,9 @@ spec:
           ports:
             - name: http-server
               containerPort: {{ .Values.backend.env.SERVER_PORT }}
+            - name: debug
+              containerPort: 5005
+              protocol: TCP
           livenessProbe:
             httpGet:
               path: /api/actuator/health
