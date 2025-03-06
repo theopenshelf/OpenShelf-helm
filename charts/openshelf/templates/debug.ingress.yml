@@ -4,7 +4,6 @@ kind: Ingress
 metadata:
   name: {{ .Release.Name }}-debug-ingress
   annotations:
-    cert-manager.io/cluster-issuer: {{ .Values.ingress.certManagerClusterIssuer }}
     nginx.ingress.kubernetes.io/ssl-redirect: "false"  # Disable SSL redirect for debug
     nginx.ingress.kubernetes.io/proxy-connect-timeout: "3600"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
@@ -21,9 +20,6 @@ spec:
           service:
             name: backend
             port:
-              number: 5005
-  tls:
-    - hosts:
-        - debug.{{ .Values.ingress.host }}
-      secretName: {{ .Values.ingress.secretName }}-debug
+              number: 5005  # Port HTTP du backend
+  # Remove the TLS section for debugging
 {{- end }}
