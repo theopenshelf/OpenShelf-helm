@@ -3,6 +3,20 @@ entries:
   openshelf-chart:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-03-06T12:32:32.581166456Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.x.x
+    description: A Helm chart for deploying OpenShelf
+    digest: 20db0d53ca23f6bea52042006bb296ff3d97f0c46331be2e641bf433dffe09a0
+    name: openshelf-chart
+    type: application
+    urls:
+    - https://github.com/theopenshelf/OpenShelf-helm/releases/download/openshelf-chart-0.1.40/openshelf-chart-0.1.40.tgz
+    version: 0.1.40
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-03-06T12:22:01.645397557Z"
     dependencies:
     - name: postgresql
@@ -561,4 +575,4 @@ entries:
     urls:
     - https://github.com/theopenshelf/OpenShelf-helm/releases/download/openshelf-chart-0.1.0/openshelf-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-06T12:22:01.645781535Z"
+generated: "2025-03-06T12:32:32.581602651Z"
