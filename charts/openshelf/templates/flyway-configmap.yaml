@@ -7,5 +7,5 @@ data:
 {{ .Files.Get "sql/V1__init.sql" | indent 4 }}
 {{- if .Values.fakeData }}
   V2__data.sql: |-
-{{ .Files.Get "sql/V2__data.sql" | indent 4 }} 
+{{ .Files.Get "sql/V3__data.sql" | indent 4 }} 
 {{- end }}
