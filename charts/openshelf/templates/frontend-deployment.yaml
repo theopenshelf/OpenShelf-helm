@@ -22,11 +22,11 @@ spec:
             - name: API_BASE_PATH
               value: "https://{{ .Values.ingress.host }}/api"
             - name: USE_MOCK_API
-              value: "false"
+              value: "{{ .Values.frontend.env.USE_MOCK_API }}"
             - name: DEMO_MODE
-              value: "false"
+              value: "{{ .Values.frontend.env.DEMO_MODE }}"
             - name: DEFAULT_LOCALE
-              value: "fr"
+              value: "{{ .Values.frontend.env.DEFAULT_LOCALE }}"
           ports:
             - name: http-server
               containerPort: 80

@@ -55,11 +55,15 @@ frontend:
     port: 80
     nodePort: 30095
   env:
-    API_URL: https://oshelf.org/api
+    API_BASE_PATH: "https://oshelf.org"  # Will be templated with ingress.host
+    USE_MOCK_API: "false"
+    DEMO_MODE: "false"
+    DEFAULT_LOCALE: "fr"
 
 flyway:
   enabled: true
   url: jdbc:postgresql://postgresql.platform.svc.cluster.local:5432/openshelf
+  fakeData: true
   image:
     repository: flyway/flyway
     tag: latest
