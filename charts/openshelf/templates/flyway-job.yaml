@@ -12,7 +12,7 @@ spec:
       containers:
         - name: flyway
           image: "{{ .Values.flyway.image.repository }}:{{ .Values.flyway.image.tag }}"
-          args: ["migrate"]
+          args: ["clean", "-connectRetries=60", "migrate"]
           env:
             - name: FLYWAY_USER
               value: {{ .Values.postgresql.auth.username }}
@@ -25,11 +25,6 @@ spec:
             - name: FLYWAY_URL
               value: {{ .Values.flyway.url }}
             - name: FLYWAY_BASELINE_ON_MIGRATE
-              value: "true"
-            - name: FLYWAY_CLEAN_DISABLED
-              value: "false"
-            # Optional: if you want to clean before migrating
-            - name: FLYWAY_CLEAN_ON_VALIDATION_ERROR
               value: "true"
           volumeMounts:
             - name: sql
