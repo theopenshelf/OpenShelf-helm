@@ -63,6 +63,16 @@ frontend:
     DEMO_MODE: "false"
     DEFAULT_LOCALE: "fr"
 
+sendgrid:
+  enabled: true
+  apiKey:
+    secretKeyRef:
+      name: sendgrid-secret
+      key: sendgrid-api-key
+  from:
+    email: notifications@mail.oshelf.org
+    name: OShelf
+
 flyway:
   enabled: true
   url: jdbc:postgresql://postgresql.platform.svc.cluster.local:5432/openshelf
