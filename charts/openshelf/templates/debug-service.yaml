@@ -6,12 +6,13 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/service-upstream: "true"
 spec:
+  selector:
+    app: backend
   ports:
     - name: debug
       protocol: TCP
       port: 5005
       targetPort: debug
       nodePort: {{ .Values.backend.service.nodePortForDebug }}
-  selector:
-    app: backend
+
 {{- end }} 
