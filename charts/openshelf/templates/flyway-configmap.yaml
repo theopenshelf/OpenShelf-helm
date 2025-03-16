@@ -13,7 +13,3 @@ data:
 {{ .Files.Get "sql/V3__user_status.sql" | indent 4 }}
   V4_migration_schema.sql: |-
 {{ .Files.Get "sql/V4_migration_schema.sql" | indent 4 }} 
-{{- if .Values.flyway.fakeData }}
-  V5__data.sql: |-
-{{ .Files.Get "sql/V5__data.sql" | indent 4 }} 
-{{- end }}
