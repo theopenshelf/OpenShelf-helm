@@ -31,8 +31,17 @@ spec:
           volumeMounts:
             - name: sql
               mountPath: /flyway/sql
+            {{- if .Values.flyway.fakeData }}
+            - name: sql-part2
+              mountPath: /flyway/sql-part2
+            {{- end }}
       volumes:
         - name: sql
           configMap:
-            name: openshelf-flyway-sql
+            name: openshelf-flyway-sql-part1
+        {{- if .Values.flyway.fakeData }}
+        - name: sql-part2
+          configMap:
+            name: openshelf-flyway-sql-part2
+        {{- end }}
       restartPolicy: Never

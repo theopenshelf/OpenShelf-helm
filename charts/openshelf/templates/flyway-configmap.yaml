@@ -1,11 +1,16 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: openshelf-flyway-sql
+  name: openshelf-flyway-sql-part1
 data:
   V1__init.sql: |-
 {{ .Files.Get "sql/V1__init.sql" | indent 4 }}
-{{- if .Values.flyway.fakeData }}
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: openshelf-flyway-sql-part2
+data:
   V2__data.sql: |-
 {{ .Files.Get "sql/V2__data.sql" | indent 4 }} 
-{{- end }}
