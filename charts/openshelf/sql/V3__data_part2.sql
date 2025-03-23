@@ -118,3 +118,44 @@ INSERT INTO custom_pages (id, position, ref, title, community_id, display_order,
 INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('f304cd4d-0449-4ee3-8f1e-08f197f93310', 'FOOTER_LINKS', 'home', 'Home', '38ef5f1c-24fa-416f-a6f4-55aa854093a2', 1, 'Bienvenue sur la page d''accueil du partage d''objects du quartier des rocs.');
 INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('4cc36947-c914-4b35-9dca-d859b620e5b3', 'FOOTER_LINKS', 'home', 'Home', '97158230-17dc-4ca4-bcbb-07ac6ca215a8', 1, 'Bienvenue sur la page d''accueil du partage d''objects du quartier du centre-ville de Poitiers.');
 
+-- Community Members
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('d58fba8d-974d-45db-b6eb-97010f34400c', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '060802a3-6eb1-4fe3-a946-ce6baf27db0d', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('b366d657-9e32-4a0e-a6ec-4e14cbe95097', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '0527a910-0fe3-47e9-80f9-354f3d2aba5e', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('eb9c35e9-be96-4963-86f9-9cca850067c0', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '8c13544a-505a-408c-b413-f0b0b7501323', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('747dc000-32d1-4c46-aa46-572d14e2ceb0', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', 'ea0e758a-2425-4113-8ddf-f108a5e154e6', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('df47d213-37d1-474c-8704-41459dc064a7', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '2b5a8648-c796-4ddd-a880-1de7d1e3ae6f', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('e2435d20-5ea0-4338-90dd-a8a0ac12e26f', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '1a1dc6bd-e775-4de0-bb89-bd6a9b58b96c', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('6e6d059d-85f7-4484-818d-3ad886bca4f5', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '2d277c1b-0105-4d7e-be86-5b4fb4f8a429', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('78c99116-3e5e-4be8-99d1-576059a291b9', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '762d0953-ac61-49ec-ac00-cbb7ca50c9d1', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('1396f8a9-6b85-41b5-8c95-bb6358c0467d', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '1819cf83-6ec2-499e-9983-abbe4eecb8bb', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('f315d870-587d-426e-8bef-d6e67a8265d1', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '275dbd2e-b781-4fa7-bc6e-2a7ff81cdbb7', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('8ebdfa01-16fe-4de1-9826-5147a3aa379e', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '45f8d238-775d-463c-be5b-4804e8f3ba0c', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('58feaadd-fd25-4dae-b9f4-30c1d05ead8b', 'e1ad242b-1766-4c50-ae6a-5e8a071f7067', '3c258698-9a52-472a-af1e-1a1d36baf944', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('4b5c3844-7541-4e8b-ab56-97ca22e5bb65', 'bc8bf9e0-098f-453e-98e3-fbb115ef233b', '45f8d238-775d-463c-be5b-4804e8f3ba0c', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('33e5305d-1497-4bba-8757-5195e15463b2', 'bc8bf9e0-098f-453e-98e3-fbb115ef233b', '3c258698-9a52-472a-af1e-1a1d36baf944', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('a69f50cd-ecc5-4a64-9664-25d7879ed0de', 'cf0c5548-9c5e-4649-9041-74a82ce100cd', '45f8d238-775d-463c-be5b-4804e8f3ba0c', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('ead4c225-ef2c-4d19-ac32-e51d8a659b00', 'cf0c5548-9c5e-4649-9041-74a82ce100cd', '3c258698-9a52-472a-af1e-1a1d36baf944', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('26805b35-5ae3-4262-a7bd-b774283885a8', 'e6e998ed-5740-43c7-81b8-3c9fbc4edba7', '45f8d238-775d-463c-be5b-4804e8f3ba0c', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('bf45e31d-77f1-4903-b43f-45afffe3d572', 'e6e998ed-5740-43c7-81b8-3c9fbc4edba7', '3c258698-9a52-472a-af1e-1a1d36baf944', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('048fb9e3-af13-414e-b515-5f9b01ab3c3b', '0df593a1-6741-4889-9412-d7c8f634b40d', '45f8d238-775d-463c-be5b-4804e8f3ba0c', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('4efff2cd-e230-4328-920c-ef8db38a0c46', '0df593a1-6741-4889-9412-d7c8f634b40d', '3c258698-9a52-472a-af1e-1a1d36baf944', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('c325b12e-46e4-471c-ad55-6c30d01e40ae', 'e19654f7-c56b-4caa-b698-b5b398e7bc98', '45f8d238-775d-463c-be5b-4804e8f3ba0c', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('04b22ccf-a465-4856-9339-9f084847b9f7', 'e19654f7-c56b-4caa-b698-b5b398e7bc98', '3c258698-9a52-472a-af1e-1a1d36baf944', 'MEMBER');
+
+-- Library Members
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('0851194d-8cb6-40e0-a3cd-12fd6bedad87', '676fcb82-be42-4f5a-ba2f-acccc3ae3224', '45f8d238-775d-463c-be5b-4804e8f3ba0c', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('471acb18-8330-488d-81bb-c9aa323537b2', '676fcb82-be42-4f5a-ba2f-acccc3ae3224', '0527a910-0fe3-47e9-80f9-354f3d2aba5e', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('8f21f2d8-ee6a-4555-8646-ad45f6039e27', 'd936f197-ab4a-4622-83f2-7297e659a39b', '45f8d238-775d-463c-be5b-4804e8f3ba0c', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('38fdec3b-3c94-4049-99a9-8e4b985a81ea', 'd936f197-ab4a-4622-83f2-7297e659a39b', '3c258698-9a52-472a-af1e-1a1d36baf944', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('584be0b8-3bff-4561-8672-7a8253fb9271', '58fdb7a2-a1d9-4275-a42e-e6b71f679b12', '060802a3-6eb1-4fe3-a946-ce6baf27db0d', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('3caa5793-f349-4ded-96a4-f0db86d52cb7', '58fdb7a2-a1d9-4275-a42e-e6b71f679b12', '0527a910-0fe3-47e9-80f9-354f3d2aba5e', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('83c04c5f-8239-4f23-8c12-3e5440ecf2fe', '1a97ba65-4cde-42e2-bb54-5095b18c7c9d', '060802a3-6eb1-4fe3-a946-ce6baf27db0d', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('dbe2455f-0654-48f4-83b6-71697354a5e4', '1a97ba65-4cde-42e2-bb54-5095b18c7c9d', '0527a910-0fe3-47e9-80f9-354f3d2aba5e', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('d2a830b3-4f11-4696-b842-5675670d50b3', '6e0fd99d-0cec-49c2-9cec-d1ce67c406c1', '060802a3-6eb1-4fe3-a946-ce6baf27db0d', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('b9e927c0-c27d-4eb6-b48f-d23d06e96c47', '6e0fd99d-0cec-49c2-9cec-d1ce67c406c1', '0527a910-0fe3-47e9-80f9-354f3d2aba5e', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('57278a34-1726-4754-be72-81e132cdd653', 'b6f79db6-f25a-425e-93f2-f26d634a5ce1', '060802a3-6eb1-4fe3-a946-ce6baf27db0d', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('18ec1d4b-7cd4-4a1f-af94-4217159c822a', 'b6f79db6-f25a-425e-93f2-f26d634a5ce1', '0527a910-0fe3-47e9-80f9-354f3d2aba5e', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('16fc29e0-1693-4e75-ae3b-5de74c7b4519', '2dbc2307-32b7-463f-b6d7-a0e92bc2f7fd', '060802a3-6eb1-4fe3-a946-ce6baf27db0d', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('b418fd9d-7f3b-4ed1-8565-6fc607de2939', '2dbc2307-32b7-463f-b6d7-a0e92bc2f7fd', '0527a910-0fe3-47e9-80f9-354f3d2aba5e', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('59e82fa3-53e8-4542-80b5-5777e1b88843', 'b9dc388f-605a-44e2-89b7-552f1e2d97f8', '060802a3-6eb1-4fe3-a946-ce6baf27db0d', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('ddffe633-6823-4dc4-b1ce-99acb6567530', 'b9dc388f-605a-44e2-89b7-552f1e2d97f8', '0527a910-0fe3-47e9-80f9-354f3d2aba5e', 'MEMBER');
