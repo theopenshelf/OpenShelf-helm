@@ -12,7 +12,7 @@ spec:
       containers:
         - name: flyway
           image: "{{ .Values.flyway.image.repository }}:{{ .Values.flyway.image.tag }}"
-          args: ["clean", "-connectRetries=60", "migrate"]
+          args: ["clean", "-connectRetries=60", "migrate", "-locations=filesystem:/flyway/sql,filesystem:/flyway/sql-part2,filesystem:/flyway/sql-part3"]
           env:
             - name: FLYWAY_USER
               value: {{ .Values.postgresql.auth.username }}
