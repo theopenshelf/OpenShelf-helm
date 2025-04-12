@@ -8,7 +8,7 @@ postgresql:
   auth:
     database: openshelf
     username: openshelf_user
-    existingSecret: postgresql-secret
+    existingSecret: oshelf-demo-postgresql
     secretKeys:
       adminPasswordKey: postgresql-password
       userPasswordKey: postgresql-password

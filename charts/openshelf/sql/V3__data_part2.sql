@@ -1,162 +1,581 @@
+
 -- Notifications
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('48e9d125-524d-4c39-a4d9-c492eeef66d4', '83663dee-dc69-4a05-90bc-143dd81848a1', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('c551cc8e-5dfe-4b1d-9c56-0a7e08eb5e08', '83663dee-dc69-4a05-90bc-143dd81848a1', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('63a9975c-0c2b-4a81-b768-704675ee7c28', '83663dee-dc69-4a05-90bc-143dd81848a1', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('e37b9096-83ed-4404-b6b7-e738a68f15cf', '83663dee-dc69-4a05-90bc-143dd81848a1', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('5e0b96ec-45e3-49a9-8229-28149705985a', '78c02c45-a075-4593-a681-caae29a63c60', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('566670b1-b94b-433f-acda-3c7946f150f7', '78c02c45-a075-4593-a681-caae29a63c60', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('9ab05ad6-6d06-48c4-9870-046dc0322964', '78c02c45-a075-4593-a681-caae29a63c60', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('10d6ae2a-bdc5-45e2-9d60-2757b29b6f19', '78c02c45-a075-4593-a681-caae29a63c60', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('5dac0142-1fd4-40d4-9aa5-98417694264a', 'cf3e665d-2af3-4754-b2b9-96b07e779b7c', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('81b0c2b7-0aef-4074-aead-d14a291d778e', 'cf3e665d-2af3-4754-b2b9-96b07e779b7c', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('c8f7643b-57c4-468a-bd16-3d256412f9bc', 'cf3e665d-2af3-4754-b2b9-96b07e779b7c', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('a5023d4b-d62e-4f09-9959-d886d3113367', 'cf3e665d-2af3-4754-b2b9-96b07e779b7c', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('949e9157-4c44-4d99-996e-fc1034ab7a3c', '8f0c73c0-c9e2-49b6-b282-6dacc7fbcf1c', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('0a0151e4-a0cd-4643-877f-a641e3627808', '8f0c73c0-c9e2-49b6-b282-6dacc7fbcf1c', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('86d1f0da-b92d-422e-a7e3-e72a01311c33', '8f0c73c0-c9e2-49b6-b282-6dacc7fbcf1c', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('dd80d326-c2a8-45d9-9e58-3e578bbadaad', '8f0c73c0-c9e2-49b6-b282-6dacc7fbcf1c', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('f2756cbf-ac64-4a87-9ac9-1da1b73580cd', 'b022845e-303a-4fa9-afa5-41c01427fe69', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('80e1a182-8e26-4a5a-9e6d-6e40cd9e77bb', 'b022845e-303a-4fa9-afa5-41c01427fe69', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('fde41abf-e793-4e01-b01a-157a8ade64cb', 'b022845e-303a-4fa9-afa5-41c01427fe69', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('20d1661f-27d8-4e5f-a69f-ed53a94defbe', 'b022845e-303a-4fa9-afa5-41c01427fe69', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('795ec2df-047c-4963-a4b3-9fb49d987c41', '925d9ed7-bd07-4427-8e58-4c6764dbf27e', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('317b90db-3eb7-44a2-bb2b-15568bab36c4', '925d9ed7-bd07-4427-8e58-4c6764dbf27e', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('7da52c22-0c70-4257-bfea-08241f041262', '925d9ed7-bd07-4427-8e58-4c6764dbf27e', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('0b912b78-cc74-493c-a7ad-0f1b1d4e1f48', '925d9ed7-bd07-4427-8e58-4c6764dbf27e', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('8431b841-9a70-46b9-83de-b62c2a40a0d4', '421d3fc8-be39-45c6-a721-e3e481a5fbd0', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('9eaa881a-e407-48b0-a6b7-ad9cbff94666', '421d3fc8-be39-45c6-a721-e3e481a5fbd0', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('281a9f69-34c2-4940-80be-632f635493f1', '421d3fc8-be39-45c6-a721-e3e481a5fbd0', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('67323282-cbb3-43f4-b87b-e7ab9a706dd2', '421d3fc8-be39-45c6-a721-e3e481a5fbd0', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('2785afe3-44d8-4fe7-91bb-8a0eb5456b85', '537dcb74-b2c7-495a-9507-b086f639ee68', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('e1503ee1-cbab-411b-a746-8e7bc60d8799', '537dcb74-b2c7-495a-9507-b086f639ee68', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('97f66f00-4f4d-4cbe-a94f-0de2cfced0ce', '537dcb74-b2c7-495a-9507-b086f639ee68', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('df868657-21bb-4e0f-936c-8b99772c6f87', '537dcb74-b2c7-495a-9507-b086f639ee68', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('a6b2b9f2-40cf-41d2-808c-8d1397865885', 'f7abb7fc-6470-4bf2-b3d0-006539b98587', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('d63ce03d-3317-4930-9f71-fb4822801480', 'f7abb7fc-6470-4bf2-b3d0-006539b98587', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('14dbe2f8-a23a-4603-a21f-c201c3546d59', 'f7abb7fc-6470-4bf2-b3d0-006539b98587', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('a7a9ae38-d09a-4b5d-8d85-f37ab9a1d6a3', 'f7abb7fc-6470-4bf2-b3d0-006539b98587', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('1bfad4e8-9051-49d8-b3ec-a25a3b23384e', '0e843a42-eb11-4106-8d3e-8259b0b1bfa7', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('a2b46000-b5dd-4441-bb52-40513ded2a47', '0e843a42-eb11-4106-8d3e-8259b0b1bfa7', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('84616ec3-6e03-4361-b730-1799d600e8af', '0e843a42-eb11-4106-8d3e-8259b0b1bfa7', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('0d02005f-c2b2-48fe-9e72-f81dcfb82355', '0e843a42-eb11-4106-8d3e-8259b0b1bfa7', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('a62ededc-56fc-4bf0-a2ad-cb41ddda55d2', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('4887e571-9a9d-41e1-9b6f-a78ecbf61b11', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('91868032-e286-4514-8914-4a4987833f8a', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('4baed09f-db33-48ba-9929-790b94771e75', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('829dbc10-f84a-4d90-be3d-fde6ea3a6f9c', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('fed9b66a-468e-4351-9bdb-0c95e322ece9', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('e12dbf64-1fbc-4ba9-be6a-1c31ab6e8d7e', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('fef96d27-54a5-4e34-ab6e-a7b4d1032dfd', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('ad639192-b4e5-4566-8065-ccd333bb626b', '0e537452-9234-4d33-afdb-8efaca3a3c6a', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('d8b438cf-6ebd-45a9-a173-bb51e2193a4e', '0e537452-9234-4d33-afdb-8efaca3a3c6a', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('5dac4a00-6735-4a70-bdc3-f03e2669ac93', '0e537452-9234-4d33-afdb-8efaca3a3c6a', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('d6b16a4d-64fa-4d1f-9e5b-dd98e43c48c8', '0e537452-9234-4d33-afdb-8efaca3a3c6a', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('9f0c1b44-564e-447e-9af2-fa0a2e8bf050', 'bf90c5cd-6265-4409-8fe2-de2526c90480', 'Platform', '2024-11-21', 'ITEM_AVAILABLE', false, '{"itemId": "12"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('1b19ebdf-4737-4a3f-929b-d6dc981ec9b8', 'bf90c5cd-6265-4409-8fe2-de2526c90480', 'Platform', '2024-11-20', 'ITEM_DUE', false, '{"itemId": "14"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('e2a59102-c3f5-47c8-bdd4-9ae73d4b30ae', 'bf90c5cd-6265-4409-8fe2-de2526c90480', 'Platform', '2024-11-19', 'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "18"}');
-INSERT INTO notifications (id, user_id, author, date, type, already_read, payload) VALUES ('3848ccdb-04aa-4163-b7c8-3a0d0a0cf978', 'bf90c5cd-6265-4409-8fe2-de2526c90480', 'Platform', '2024-11-19', 'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "1"}');
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'bf389b53-912d-4d19-b81f-335fd7cb9871', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'c8545c53-ee7d-4bce-a784-313341362db1', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '85e7cfba-a8da-4344-aca9-0365cc8233f6', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '934d2bc5-8245-4077-bc74-923d83d71d5b', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'abb8018d-1033-4b12-bf6f-23c57b690b61', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'a5b1efe5-a9ad-4fcb-a4f8-93dc1b6df96e', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'f3566814-54b2-484a-9bd6-24844fecd8c9', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '0cf02b4f-15f5-4741-9deb-b55a830c492d', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '64165a9e-bda8-4e63-b5bd-5a234bcf3750', '60249cc9-5823-4a7c-88d7-4c67748dbb53', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'a7e9014c-b3b8-45bb-822b-6170b9a08eb3', '60249cc9-5823-4a7c-88d7-4c67748dbb53', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '404c5574-1781-4020-a90b-fab945f72743', '60249cc9-5823-4a7c-88d7-4c67748dbb53', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '2c72fc52-4eae-467c-816a-723da0471965', '60249cc9-5823-4a7c-88d7-4c67748dbb53', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '9c075c32-f3ed-45aa-a312-bd80cf86e099', 'd195fc96-b352-426e-b9db-e5296acec408', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '19e979d7-16a7-49ca-8dcc-7331c22ce426', 'd195fc96-b352-426e-b9db-e5296acec408', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '836e9190-0563-47bf-9841-9bd2638463d4', 'd195fc96-b352-426e-b9db-e5296acec408', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'f5821856-3be8-4247-a10d-cfcbecb7cb44', 'd195fc96-b352-426e-b9db-e5296acec408', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '414d6182-c7aa-406f-b392-1f6952ca4684', 'd34ce04c-9a79-4d4d-a533-88d4266c3c3b', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'f858f5ea-e5b2-498b-abec-be44fd919fb9', 'd34ce04c-9a79-4d4d-a533-88d4266c3c3b', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'b169f984-e627-4b09-be28-da2713106ffd', 'd34ce04c-9a79-4d4d-a533-88d4266c3c3b', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '681255b0-b827-49fe-83c6-ede96723abc9', 'd34ce04c-9a79-4d4d-a533-88d4266c3c3b', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'dfa6ed35-676b-4cb8-aabf-a77a9f564aa5', '6d73f03d-50fc-4b69-8ceb-d7f9791a13ba', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'fb0b492b-4548-4dad-af31-2305e79a5c4d', '6d73f03d-50fc-4b69-8ceb-d7f9791a13ba', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'c7fefce2-657e-4737-8e61-5fd6ac22c927', '6d73f03d-50fc-4b69-8ceb-d7f9791a13ba', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'f460e2ff-cf43-40f5-838e-7293de7f24e4', '6d73f03d-50fc-4b69-8ceb-d7f9791a13ba', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '8113df23-2787-4aa1-a9f6-d91390ee890f', '9c26ac0d-ab26-411b-8238-0f7a130bf967', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'd4c4c58b-63a0-4f31-bdde-594f597f63a3', '9c26ac0d-ab26-411b-8238-0f7a130bf967', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '07ae4899-cd9d-4780-80bf-811d4da83f3c', '9c26ac0d-ab26-411b-8238-0f7a130bf967', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'c3d6f424-89a0-4893-8c84-895e7b42637a', '9c26ac0d-ab26-411b-8238-0f7a130bf967', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '27d03ffd-3cbd-4c07-928e-b45f569362ac', 'da1a2634-143a-4028-b821-6459f9cdd6a2', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '94eb7904-586c-4362-9bae-f9a0c1b8ab78', 'da1a2634-143a-4028-b821-6459f9cdd6a2', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'f759983b-3012-49de-bfc4-09e8a094a4bd', 'da1a2634-143a-4028-b821-6459f9cdd6a2', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '35a120ce-243e-48d8-bddc-0915ceebc06e', 'da1a2634-143a-4028-b821-6459f9cdd6a2', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'c2bbcc88-2f12-4b15-aa4d-9db4a6c16dad', 'cae3e61f-06fe-4469-a15f-f9e2d60a7b6a', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'c2fe2710-7090-49ac-a769-9f56fb7556fa', 'cae3e61f-06fe-4469-a15f-f9e2d60a7b6a', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'f10d55e3-f503-4b9f-8d1e-b157a1d8d114', 'cae3e61f-06fe-4469-a15f-f9e2d60a7b6a', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '10383f28-c55e-4d54-8641-1a4daab85037', 'cae3e61f-06fe-4469-a15f-f9e2d60a7b6a', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '290627d7-f981-4e34-92ec-d5e30deb32f6', '885df314-dac1-48fe-a33e-e2b792c3e7c7', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'a568b60f-e9c5-4e56-9d18-234df7b9581e', '885df314-dac1-48fe-a33e-e2b792c3e7c7', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '8ced3516-55c2-4a1a-b5f0-1db0c243ae74', '885df314-dac1-48fe-a33e-e2b792c3e7c7', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '2f6f85f2-d7e3-496d-8d36-16a1de9eaaf6', '885df314-dac1-48fe-a33e-e2b792c3e7c7', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'e36b17dd-bb8a-4d04-9bbf-ee1f99533ca1', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '2a607ec8-1ee7-47cf-ad69-e08a22e49556', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '98fcd115-aa30-42e1-9b27-c4e153937bd9', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '5ef0bc07-c68f-420e-a975-cef523d77b88', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '0318bc70-2b20-4a87-a441-51453d7f1914', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '33ad29f1-b4f6-4c14-bb0e-a5c4a2b27ed9', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'ec88e572-806b-4cf4-a7a9-1a102610d736', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'fb28535d-2577-4be6-b923-731267bba2aa', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '90128a3a-bb26-4a56-be87-f918f9d18924', 'fdb9e254-489a-405b-8882-0f35afd0a4a7', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '193195af-f26f-4fda-a379-df8f8f88e316', 'fdb9e254-489a-405b-8882-0f35afd0a4a7', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'c67ae1f0-6082-4398-a9b2-3cb650766336', 'fdb9e254-489a-405b-8882-0f35afd0a4a7', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '9bbce755-d8b5-46c7-9d84-f3313a4bd1e5', 'fdb9e254-489a-405b-8882-0f35afd0a4a7', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'bb26a34b-ec1c-4c57-8f78-de7bd39310fe', '5d109106-b83a-4539-9989-a0460e9afa6a', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '2b281a12-b199-4c98-9f8c-289f9dc9ab53', '5d109106-b83a-4539-9989-a0460e9afa6a', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'c62ec6e6-c36d-4071-8229-3a55de71324e', '5d109106-b83a-4539-9989-a0460e9afa6a', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '818c04df-6705-455d-8e63-727b5429f8bc', '5d109106-b83a-4539-9989-a0460e9afa6a', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '3188bbd5-6ebd-4a54-9d35-0b749a330c9f', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'eaae1f8b-72ec-4d89-92a4-7c14ad8d2bae', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'ebd179b0-174b-4230-a8ae-2bd0185afe1b', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'c89e0e5a-36e2-4427-9aa6-e966f3fdf0fc', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '258b16e3-2c21-44e1-b99d-5cb7da19b639', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'Platform', '2024-11-21T00:00:00Z',
+                'ITEM_AVAILABLE', false, '{"itemId": "2781ea0e-cd14-4c36-8c39-d93ed168c86c"}',
+                '2781ea0e-cd14-4c36-8c39-d93ed168c86c', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '46c9691a-25a3-4789-ac5f-5ba5b6163d2c', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'Platform', '2024-11-20T00:00:00Z',
+                'ITEM_DUE', false, '{"itemId": "e640effe-2597-46af-bc54-31151c4a5bd5"}',
+                'e640effe-2597-46af-bc54-31151c4a5bd5', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                '45d01e36-0ae5-44c6-945c-fe1672c4f454', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_BORROW_RESERVATION_DATE_START', true, '{"itemId": "3708b840-85c0-4578-ba54-4e4ac53bcacf"}',
+                '3708b840-85c0-4578-ba54-4e4ac53bcacf', NULL
+            );
+INSERT INTO notifications (
+                id, user_id, author, date, type, already_read, payload, item_id, borrow_record_id
+            ) VALUES (
+                'd7f7fdfb-9382-4567-812e-16a1e93b8657', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'Platform', '2024-11-19T00:00:00Z',
+                'ITEM_RESERVED_NO_LONGER_AVAILABLE', true, '{"itemId": "db03813a-491c-4cc3-962d-f4544010d29c"}',
+                'db03813a-491c-4cc3-962d-f4544010d29c', NULL
+            );
 
 -- Help Categories and Articles
-INSERT INTO help_categories (id, name, icon, display_order) VALUES ('9c00a88c-be39-46e0-9d43-4d8098b5e8ac', 'General', '@tui.globe', 1);
-INSERT INTO help_categories (id, name, icon, display_order) VALUES ('85ac17e7-6b78-4142-8b40-997a0d58c690', 'Account', 'user', 2);
-INSERT INTO help_categories (id, name, icon, display_order) VALUES ('19a86169-46c4-4c86-9c2b-2eb8d11afe64', 'Billing', 'credit-card', 3);
-INSERT INTO help_categories (id, name, icon, display_order) VALUES ('c38631ce-fb2f-4932-ae23-335dfd3fb17f', 'Technical Support', 'settings', 4);
-INSERT INTO help_categories (id, name, icon, display_order) VALUES ('e2c14946-8aa5-4a9b-862e-7fa860a1e6ae', 'Privacy', 'lock', 5);
-INSERT INTO help_categories (id, name, icon, display_order) VALUES ('7cb72647-791f-4dad-bac5-b0d162045b92', 'Security', 'shield', 6);
-INSERT INTO help_categories (id, name, icon, display_order) VALUES ('ceecac7f-6b9b-4c86-a6f9-61ba436f62f3', 'Feedback', 'message-circle', 7);
-INSERT INTO help_categories (id, name, icon, display_order) VALUES ('469298a0-f6e2-4565-9983-f0ff7d690442', 'Updates', 'bell-ring', 8);
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('8e375709-4dfb-4ae8-a006-23ffbaaf67ce', 'How to use the app', '<p><b>This article</b> provides a comprehensive guide on how to use the app effectively. It covers the basic functionalities, navigation tips, and advanced features. Users will learn how to customize their settings, manage notifications, and utilize the app''s tools to enhance productivity. Additionally, troubleshooting common issues and accessing support are discussed. By the end of this article, users should feel confident in navigating and utilizing the app to its fullest potential.</p>', 1, '9c00a88c-be39-46e0-9d43-4d8098b5e8ac');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('ccec2e87-3235-4ad4-bb94-f911ae8881ce', 'Creating an Account', 'Creating an account is the first step to accessing all the features of our service. This article walks you through the registration process, including filling out your personal information, verifying your email address, and setting up a secure password. We also provide tips on choosing a strong password and keeping your account information safe. Once registered, you''ll be able to personalize your profile and start using the app immediately.', 2, '85ac17e7-6b78-4142-8b40-997a0d58c690');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('dde02c1b-be83-4ec9-a1ad-4986516fccb4', 'Resetting Password', 'If you''ve forgotten your password or need to reset it for security reasons, this article will guide you through the process. We explain how to initiate a password reset from the login screen, receive a reset link via email, and create a new password. Additionally, we offer advice on creating a strong password and maintaining account security. Remember to update your password regularly to protect your account from unauthorized access.', 3, '85ac17e7-6b78-4142-8b40-997a0d58c690');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('30cde001-73cb-4a58-a45f-0a0fd32acdf2', 'Understanding Your Bill', 'Billing can often be confusing, but this article aims to clarify the details of your bill. We break down each section of your bill, explaining charges, fees, and any applicable taxes. You''ll learn how to read your billing statement, understand your payment options, and manage your billing preferences. We also provide information on how to dispute charges and contact customer support for billing inquiries.', 4, '19a86169-46c4-4c86-9c2b-2eb8d11afe64');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('2936b063-f2dc-4590-a94d-958870947e0b', 'Troubleshooting Login Issues', 'Experiencing login issues can be frustrating, but this article offers solutions to common problems. We cover scenarios such as forgotten passwords, account lockouts, and two-factor authentication errors. Step-by-step instructions are provided to help you regain access to your account. Additionally, we discuss how to update your login credentials and ensure your account remains secure.', 5, 'c38631ce-fb2f-4932-ae23-335dfd3fb17f');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('4efd4788-2d27-428e-bf60-3bb7684e825a', 'Privacy Settings Overview', 'Your privacy is important to us, and this article explains how to manage your privacy settings. We guide you through the process of adjusting who can see your information, how to control data sharing, and setting up privacy alerts. Learn how to review your privacy settings regularly and make informed decisions about your data. We also provide tips on protecting your personal information online.', 6, 'e2c14946-8aa5-4a9b-862e-7fa860a1e6ae');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('da7136b9-3f05-4ed5-9130-d4d68357469d', 'Enhancing Account Security', 'Security is a top priority, and this article provides tips on enhancing your account security. We discuss the importance of using strong, unique passwords, enabling two-factor authentication, and recognizing phishing attempts. Learn how to monitor your account for suspicious activity and what steps to take if you suspect a security breach. Keeping your account secure is a shared responsibility, and we provide the tools to help you do so.', 7, '7cb72647-791f-4dad-bac5-b0d162045b92');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('69f8defd-c3ca-4f5f-899b-307c8b742fe3', 'Providing Feedback', 'We value your feedback and encourage you to share your thoughts on our services. This article explains how to submit feedback, whether it''s a suggestion, compliment, or complaint. We outline the different channels available for providing feedback and how we use your input to improve our offerings. Your feedback is crucial in helping us deliver the best possible experience.', 8, 'ceecac7f-6b9b-4c86-a6f9-61ba436f62f3');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('12c667b5-bbc6-4190-acb2-746bb1dec0aa', 'Latest App Updates', 'Stay informed about the latest updates to our app with this article. We provide details on new features, improvements, and bug fixes. Learn how to update your app to the latest version and take advantage of the enhancements. We also discuss upcoming features and how you can participate in beta testing. Keeping your app updated ensures you have the best experience possible.', 9, '469298a0-f6e2-4565-9983-f0ff7d690442');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('b713798b-3e1d-4112-ac96-6d9ac3adf098', 'General Tips for New Users', 'Welcome to our app! This article is designed to help new users get started. We cover the basics of setting up your profile, exploring the main features, and customizing your experience. You''ll also find tips on how to connect with other users and make the most of the hub features. Whether you''re here for personal use or professional networking, these tips will help you get the most out of your experience.', 10, '9c00a88c-be39-46e0-9d43-4d8098b5e8ac');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('3c2b6655-0470-4182-9fcc-52dc2096b91e', 'Managing Your Account Settings', 'Your account settings are crucial for personalizing your experience. This article guides you through the various settings available, including notification preferences, privacy controls, and account security options. Learn how to update your profile information, link social media accounts, and manage your subscription settings. Keeping your account settings up-to-date ensures a seamless and secure experience.', 11, '85ac17e7-6b78-4142-8b40-997a0d58c690');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('539131e0-e4eb-456d-b95e-5ee6ffd728cb', 'Understanding Subscription Plans', 'Choosing the right subscription plan is important for accessing the features you need. This article explains the different plans available, including their benefits, costs, and limitations. We also provide guidance on how to upgrade or downgrade your plan, manage your billing cycle, and take advantage of promotional offers. Understanding your subscription options helps you make informed decisions about your service.', 12, '19a86169-46c4-4c86-9c2b-2eb8d11afe64');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('2ac68eb6-2283-44d8-8180-645293fe7607', 'Resolving Technical Issues', 'Technical issues can disrupt your experience, but this article offers solutions to common problems. We cover topics such as app crashes, connectivity issues, and performance slowdowns. Step-by-step troubleshooting guides are provided to help you resolve these issues quickly. Additionally, we discuss how to report bugs and contact technical support for further assistance.', 13, 'c38631ce-fb2f-4932-ae23-335dfd3fb17f');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('af5fb41b-2a86-4767-b91c-03cc005abe35', 'Data Privacy and Protection', 'Protecting your data is a top priority, and this article explains how we safeguard your information. We discuss our data privacy policies, how we collect and use your data, and the measures we take to protect it. Learn about your rights regarding data access and deletion, and how to manage your data preferences. Understanding our commitment to data privacy helps you feel secure in using our services.', 14, 'e2c14946-8aa5-4a9b-862e-7fa860a1e6ae');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('e8abebe5-f051-46ad-8a9f-5c278d8aa389', 'Recognizing and Avoiding Scams', 'Online scams are a growing concern, and this article provides tips on recognizing and avoiding them. We discuss common scam tactics, such as phishing emails and fraudulent websites, and how to protect yourself from falling victim. Learn how to verify the authenticity of communications, report suspicious activity, and keep your personal information safe. Staying informed about scams helps you navigate the online world safely.', 15, '7cb72647-791f-4dad-bac5-b0d162045b92');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('5c7b5a12-90a8-4f30-b742-1a0d1f033e68', 'How to Submit a Feature Request', 'We welcome your ideas for new features and improvements. This article explains how to submit a feature request, including the information we need to evaluate your suggestion. We outline the process for reviewing and implementing new features, and how you can track the progress of your request. Your input is valuable in shaping the future of our app, and we encourage you to share your ideas.', 16, 'ceecac7f-6b9b-4c86-a6f9-61ba436f62f3');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('ee85ccd1-4b71-4b05-a10a-d6791d3388f6', 'Participating in Beta Testing', 'Join our beta testing program to get early access to new features and provide feedback. This article explains how to sign up for beta testing, what to expect during the testing phase, and how to provide feedback on your experience. Participating in beta testing gives you a chance to influence the development of our app and help us deliver the best possible experience to all users.', 17, '469298a0-f6e2-4565-9983-f0ff7d690442');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('5e4472a1-3a57-404e-b1e5-cc667152a5db', 'Navigating the App Interface', 'This article provides tips on navigating the app interface efficiently. Learn about the layout, key features, and shortcuts to enhance your user experience.', 18, '9c00a88c-be39-46e0-9d43-4d8098b5e8ac');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('3a11afc1-3809-4e32-9df8-d8157186799f', 'Customizing Your Dashboard', 'Discover how to customize your dashboard to suit your preferences. This article covers widget management, layout adjustments, and personalization options.', 19, '9c00a88c-be39-46e0-9d43-4d8098b5e8ac');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('9590576d-fcf1-43ae-b38c-175395dd726b', 'Advanced Account Settings', 'Explore advanced settings to optimize your account. This article guides you through security enhancements, privacy controls, and notification preferences.', 20, '85ac17e7-6b78-4142-8b40-997a0d58c690');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('98037922-31a8-4abb-8e11-23535c8ada18', 'Managing Multiple Accounts', 'Learn how to manage multiple accounts efficiently. This article provides strategies for switching between accounts and keeping your information organized.', 21, '85ac17e7-6b78-4142-8b40-997a0d58c690');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('242f51df-9b00-4681-a90a-fc8ad4881870', 'Understanding Billing Cycles', 'Gain insights into how billing cycles work. This article explains billing periods, due dates, and how to avoid late fees.', 22, '19a86169-46c4-4c86-9c2b-2eb8d11afe64');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('b3e85754-0861-4063-b09b-222247b364ee', 'Setting Up Auto-Pay', 'Automate your payments with ease. This article walks you through setting up auto-pay and managing your payment methods.', 23, '19a86169-46c4-4c86-9c2b-2eb8d11afe64');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('4278977e-85f7-4518-82dc-29a286aa538a', 'Technical Support FAQs', 'Find answers to common technical questions. This article compiles frequently asked questions and solutions for quick troubleshooting.', 24, 'c38631ce-fb2f-4932-ae23-335dfd3fb17f');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('32582b66-480c-45b3-9ab2-8de28028bb9f', 'Optimizing App Performance', 'Enhance your app''s performance with these tips. This article covers memory management, app updates, and device compatibility.', 25, 'c38631ce-fb2f-4932-ae23-335dfd3fb17f');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('29e7ee9d-a425-4460-b144-af9e50c07a57', 'Privacy Policy Overview', 'Understand our privacy policy in detail. This article explains how we handle your data and your rights as a user.', 26, 'e2c14946-8aa5-4a9b-862e-7fa860a1e6ae');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('0fc0d935-6686-4be4-9c2e-b13bbef1427d', 'Data Encryption Explained', 'Learn about data encryption and its importance. This article discusses encryption methods and how they protect your information.', 27, 'e2c14946-8aa5-4a9b-862e-7fa860a1e6ae');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('b18046b4-237a-490d-b897-91d58feb00cf', 'Security Best Practices', 'Adopt best practices for securing your account. This article provides guidelines on password management, two-factor authentication, and more.', 28, '7cb72647-791f-4dad-bac5-b0d162045b92');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('51c4a8a3-166a-467b-8416-2e1cb58c47a6', 'Identifying Phishing Attempts', 'Stay safe from phishing scams. This article teaches you how to recognize phishing attempts and protect your personal information.', 29, '7cb72647-791f-4dad-bac5-b0d162045b92');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('fd7b1d67-7005-4048-ac2e-44212ee2b95b', 'Effective Feedback Techniques', 'Learn how to provide constructive feedback. This article offers tips on articulating your thoughts and ensuring your feedback is impactful.', 30, 'ceecac7f-6b9b-4c86-a6f9-61ba436f62f3');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('a486064e-107d-44cd-8a17-796c0f5e7b0c', 'Feedback and Improvement Cycle', 'Understand how your feedback contributes to improvements. This article explains the feedback loop and how we implement changes based on user input.', 31, 'ceecac7f-6b9b-4c86-a6f9-61ba436f62f3');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('03f9d8f4-5dc5-4ebc-998b-587d4ece1446', 'Upcoming Features Preview', 'Get a sneak peek at upcoming features. This article highlights new developments and how they will enhance your app experience.', 32, '469298a0-f6e2-4565-9983-f0ff7d690442');
-INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('9f2cdfb2-3ee0-4f19-bc50-dca2c3d86487', 'Participating in User Surveys', 'Contribute to our app''s development by participating in surveys. This article explains how your input shapes future updates.', 33, '469298a0-f6e2-4565-9983-f0ff7d690442');
+INSERT INTO help_categories (id, name, icon, display_order) VALUES ('85ef19fe-cfcf-4611-af80-d6838d3c1178', 'General', '@tui.globe', 1);
+INSERT INTO help_categories (id, name, icon, display_order) VALUES ('37899992-fdbd-482f-a8a1-739398bb9ba9', 'Account', 'user', 2);
+INSERT INTO help_categories (id, name, icon, display_order) VALUES ('11f81ee2-65c6-455e-b283-30458abd4fa5', 'Billing', 'credit-card', 3);
+INSERT INTO help_categories (id, name, icon, display_order) VALUES ('d6a9255c-1ed4-448c-9bb2-00b2f25da44b', 'Technical Support', 'settings', 4);
+INSERT INTO help_categories (id, name, icon, display_order) VALUES ('eb858575-73c3-49f9-a91c-2d6121d4acd2', 'Privacy', 'lock', 5);
+INSERT INTO help_categories (id, name, icon, display_order) VALUES ('337588e1-5575-4b40-ad12-37b99f9c01c3', 'Security', 'shield', 6);
+INSERT INTO help_categories (id, name, icon, display_order) VALUES ('e18bb148-670b-4d37-bf1d-20b532e8c19b', 'Feedback', 'message-circle', 7);
+INSERT INTO help_categories (id, name, icon, display_order) VALUES ('56f1b205-b2db-4f5d-b415-efe4b56d5dca', 'Updates', 'bell-ring', 8);
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('0cbf3a52-a4a2-4d79-9ccb-0a0394408ee0', 'How to use the app', '<p><b>This article</b> provides a comprehensive guide on how to use the app effectively. It covers the basic functionalities, navigation tips, and advanced features. Users will learn how to customize their settings, manage notifications, and utilize the app''s tools to enhance productivity. Additionally, troubleshooting common issues and accessing support are discussed. By the end of this article, users should feel confident in navigating and utilizing the app to its fullest potential.</p>', 1, '85ef19fe-cfcf-4611-af80-d6838d3c1178');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('9fa15cd8-413a-4a27-8086-722ab8fece6a', 'Creating an Account', 'Creating an account is the first step to accessing all the features of our service. This article walks you through the registration process, including filling out your personal information, verifying your email address, and setting up a secure password. We also provide tips on choosing a strong password and keeping your account information safe. Once registered, you''ll be able to personalize your profile and start using the app immediately.', 2, '37899992-fdbd-482f-a8a1-739398bb9ba9');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('bac97066-5b5d-4bb5-b7ca-657007c3770d', 'Resetting Password', 'If you''ve forgotten your password or need to reset it for security reasons, this article will guide you through the process. We explain how to initiate a password reset from the login screen, receive a reset link via email, and create a new password. Additionally, we offer advice on creating a strong password and maintaining account security. Remember to update your password regularly to protect your account from unauthorized access.', 3, '37899992-fdbd-482f-a8a1-739398bb9ba9');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('3e0813c1-7fc9-4b6e-a65b-9a4cad3a1921', 'Understanding Your Bill', 'Billing can often be confusing, but this article aims to clarify the details of your bill. We break down each section of your bill, explaining charges, fees, and any applicable taxes. You''ll learn how to read your billing statement, understand your payment options, and manage your billing preferences. We also provide information on how to dispute charges and contact customer support for billing inquiries.', 4, '11f81ee2-65c6-455e-b283-30458abd4fa5');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('f951c541-6807-4277-938d-437c5c7e8ec9', 'Troubleshooting Login Issues', 'Experiencing login issues can be frustrating, but this article offers solutions to common problems. We cover scenarios such as forgotten passwords, account lockouts, and two-factor authentication errors. Step-by-step instructions are provided to help you regain access to your account. Additionally, we discuss how to update your login credentials and ensure your account remains secure.', 5, 'd6a9255c-1ed4-448c-9bb2-00b2f25da44b');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('386ed601-aa2d-4b49-8f4a-ea2ea1e03f34', 'Privacy Settings Overview', 'Your privacy is important to us, and this article explains how to manage your privacy settings. We guide you through the process of adjusting who can see your information, how to control data sharing, and setting up privacy alerts. Learn how to review your privacy settings regularly and make informed decisions about your data. We also provide tips on protecting your personal information online.', 6, 'eb858575-73c3-49f9-a91c-2d6121d4acd2');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('2726a636-565d-49b7-9698-2a1041f91b1d', 'Enhancing Account Security', 'Security is a top priority, and this article provides tips on enhancing your account security. We discuss the importance of using strong, unique passwords, enabling two-factor authentication, and recognizing phishing attempts. Learn how to monitor your account for suspicious activity and what steps to take if you suspect a security breach. Keeping your account secure is a shared responsibility, and we provide the tools to help you do so.', 7, '337588e1-5575-4b40-ad12-37b99f9c01c3');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('fbe62eff-293f-4e09-bcc7-cb77d120d99c', 'Providing Feedback', 'We value your feedback and encourage you to share your thoughts on our services. This article explains how to submit feedback, whether it''s a suggestion, compliment, or complaint. We outline the different channels available for providing feedback and how we use your input to improve our offerings. Your feedback is crucial in helping us deliver the best possible experience.', 8, 'e18bb148-670b-4d37-bf1d-20b532e8c19b');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('e452189b-2219-47cf-9f96-ea00f44f49a6', 'Latest App Updates', 'Stay informed about the latest updates to our app with this article. We provide details on new features, improvements, and bug fixes. Learn how to update your app to the latest version and take advantage of the enhancements. We also discuss upcoming features and how you can participate in beta testing. Keeping your app updated ensures you have the best experience possible.', 9, '56f1b205-b2db-4f5d-b415-efe4b56d5dca');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('e82605fc-4336-420e-8769-3eaa6f0f5caa', 'General Tips for New Users', 'Welcome to our app! This article is designed to help new users get started. We cover the basics of setting up your profile, exploring the main features, and customizing your experience. You''ll also find tips on how to connect with other users and make the most of the hub features. Whether you''re here for personal use or professional networking, these tips will help you get the most out of your experience.', 10, '85ef19fe-cfcf-4611-af80-d6838d3c1178');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('e7ca98b7-639c-431e-b4b2-789c1df5e608', 'Managing Your Account Settings', 'Your account settings are crucial for personalizing your experience. This article guides you through the various settings available, including notification preferences, privacy controls, and account security options. Learn how to update your profile information, link social media accounts, and manage your subscription settings. Keeping your account settings up-to-date ensures a seamless and secure experience.', 11, '37899992-fdbd-482f-a8a1-739398bb9ba9');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('28b294fe-0b43-4f3c-a7f3-b7a6d4e6303b', 'Understanding Subscription Plans', 'Choosing the right subscription plan is important for accessing the features you need. This article explains the different plans available, including their benefits, costs, and limitations. We also provide guidance on how to upgrade or downgrade your plan, manage your billing cycle, and take advantage of promotional offers. Understanding your subscription options helps you make informed decisions about your service.', 12, '11f81ee2-65c6-455e-b283-30458abd4fa5');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('fed14147-6ffe-43bc-a2ee-a12f7d25dd44', 'Resolving Technical Issues', 'Technical issues can disrupt your experience, but this article offers solutions to common problems. We cover topics such as app crashes, connectivity issues, and performance slowdowns. Step-by-step troubleshooting guides are provided to help you resolve these issues quickly. Additionally, we discuss how to report bugs and contact technical support for further assistance.', 13, 'd6a9255c-1ed4-448c-9bb2-00b2f25da44b');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('63fab045-864d-4eb1-85b9-39d048d0a4ee', 'Data Privacy and Protection', 'Protecting your data is a top priority, and this article explains how we safeguard your information. We discuss our data privacy policies, how we collect and use your data, and the measures we take to protect it. Learn about your rights regarding data access and deletion, and how to manage your data preferences. Understanding our commitment to data privacy helps you feel secure in using our services.', 14, 'eb858575-73c3-49f9-a91c-2d6121d4acd2');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('837795dd-dbb1-483c-9cff-6ccd80db6703', 'Recognizing and Avoiding Scams', 'Online scams are a growing concern, and this article provides tips on recognizing and avoiding them. We discuss common scam tactics, such as phishing emails and fraudulent websites, and how to protect yourself from falling victim. Learn how to verify the authenticity of communications, report suspicious activity, and keep your personal information safe. Staying informed about scams helps you navigate the online world safely.', 15, '337588e1-5575-4b40-ad12-37b99f9c01c3');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('58a55f9e-3323-47a2-8751-df7a9158d876', 'How to Submit a Feature Request', 'We welcome your ideas for new features and improvements. This article explains how to submit a feature request, including the information we need to evaluate your suggestion. We outline the process for reviewing and implementing new features, and how you can track the progress of your request. Your input is valuable in shaping the future of our app, and we encourage you to share your ideas.', 16, 'e18bb148-670b-4d37-bf1d-20b532e8c19b');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('6e453447-216a-4bc8-aaf0-f2a50a18e7d5', 'Participating in Beta Testing', 'Join our beta testing program to get early access to new features and provide feedback. This article explains how to sign up for beta testing, what to expect during the testing phase, and how to provide feedback on your experience. Participating in beta testing gives you a chance to influence the development of our app and help us deliver the best possible experience to all users.', 17, '56f1b205-b2db-4f5d-b415-efe4b56d5dca');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('99bb79d8-45c8-4cab-9268-491f479b35b8', 'Navigating the App Interface', 'This article provides tips on navigating the app interface efficiently. Learn about the layout, key features, and shortcuts to enhance your user experience.', 18, '85ef19fe-cfcf-4611-af80-d6838d3c1178');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('c4e0953d-8f61-47dd-ba34-99d9b0b0ac9a', 'Customizing Your Dashboard', 'Discover how to customize your dashboard to suit your preferences. This article covers widget management, layout adjustments, and personalization options.', 19, '85ef19fe-cfcf-4611-af80-d6838d3c1178');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('7c693a4f-82b3-41a0-bbe1-62ac274598d9', 'Advanced Account Settings', 'Explore advanced settings to optimize your account. This article guides you through security enhancements, privacy controls, and notification preferences.', 20, '37899992-fdbd-482f-a8a1-739398bb9ba9');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('bdcb1c12-d6a8-4b67-a231-dc7958e179eb', 'Managing Multiple Accounts', 'Learn how to manage multiple accounts efficiently. This article provides strategies for switching between accounts and keeping your information organized.', 21, '37899992-fdbd-482f-a8a1-739398bb9ba9');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('c235b951-379f-4885-8114-7a1dc1cbbe47', 'Understanding Billing Cycles', 'Gain insights into how billing cycles work. This article explains billing periods, due dates, and how to avoid late fees.', 22, '11f81ee2-65c6-455e-b283-30458abd4fa5');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('cac76fe4-41c3-4d5d-8d64-3ce16809e4b7', 'Setting Up Auto-Pay', 'Automate your payments with ease. This article walks you through setting up auto-pay and managing your payment methods.', 23, '11f81ee2-65c6-455e-b283-30458abd4fa5');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('33c5292d-6047-4a13-9437-9ae0bffec884', 'Technical Support FAQs', 'Find answers to common technical questions. This article compiles frequently asked questions and solutions for quick troubleshooting.', 24, 'd6a9255c-1ed4-448c-9bb2-00b2f25da44b');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('9c325d86-e7df-4ba2-bb3f-2d4c770601fc', 'Optimizing App Performance', 'Enhance your app''s performance with these tips. This article covers memory management, app updates, and device compatibility.', 25, 'd6a9255c-1ed4-448c-9bb2-00b2f25da44b');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('531e2958-ea58-47ec-bccc-5a2f8e753c99', 'Privacy Policy Overview', 'Understand our privacy policy in detail. This article explains how we handle your data and your rights as a user.', 26, 'eb858575-73c3-49f9-a91c-2d6121d4acd2');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('ec65e095-219f-41c3-9d0d-85212f78e9ef', 'Data Encryption Explained', 'Learn about data encryption and its importance. This article discusses encryption methods and how they protect your information.', 27, 'eb858575-73c3-49f9-a91c-2d6121d4acd2');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('8b1ca466-0312-4ec0-a70b-e08035155637', 'Security Best Practices', 'Adopt best practices for securing your account. This article provides guidelines on password management, two-factor authentication, and more.', 28, '337588e1-5575-4b40-ad12-37b99f9c01c3');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('319bb9c2-1b5b-4126-8f44-2adf57736ab1', 'Identifying Phishing Attempts', 'Stay safe from phishing scams. This article teaches you how to recognize phishing attempts and protect your personal information.', 29, '337588e1-5575-4b40-ad12-37b99f9c01c3');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('0cc53e06-cac3-4a57-a7d7-92307fc5e034', 'Effective Feedback Techniques', 'Learn how to provide constructive feedback. This article offers tips on articulating your thoughts and ensuring your feedback is impactful.', 30, 'e18bb148-670b-4d37-bf1d-20b532e8c19b');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('5268edeb-1ef8-4094-b4e4-41ce53938b33', 'Feedback and Improvement Cycle', 'Understand how your feedback contributes to improvements. This article explains the feedback loop and how we implement changes based on user input.', 31, 'e18bb148-670b-4d37-bf1d-20b532e8c19b');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('6062e1b7-4426-467d-a29c-232646300dc7', 'Upcoming Features Preview', 'Get a sneak peek at upcoming features. This article highlights new developments and how they will enhance your app experience.', 32, '56f1b205-b2db-4f5d-b415-efe4b56d5dca');
+INSERT INTO help_articles (id, title, content, display_order, category_id) VALUES ('0be3f298-7d3a-47fe-b2b3-91ed9cc3e190', 'Participating in User Surveys', 'Contribute to our app''s development by participating in surveys. This article explains how your input shapes future updates.', 33, '56f1b205-b2db-4f5d-b415-efe4b56d5dca');
 
 -- Custom Pages
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('26e6b5b4-de1e-4f1a-8e75-81e7f3d820f4', 'FOOTER_LINKS', 'my-neighborhood', 'My neighborhood', NULL, 0, 'This is the content of the first custom page.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('a1b87548-2233-4004-b188-81d1e1d76141', 'FOOTER_LINKS', 'how-borrowing-works', 'How borrowing works', NULL, 1, 'This is the content of the first custom page.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('128acab3-f68b-41ce-92f0-6532dce8c519', 'FOOTER_LINKS', 'share-give-an-object', 'Share/give an object', NULL, 2, 'This is the content of the first custom page.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('567151cc-b8c2-436b-a029-9efa2a6f6bf8', 'COPYRIGHT', 'privacy-policy', 'Privacy policy', NULL, 0, 'This is the content of the first custom page.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('9cf7903a-22ab-421c-857c-6b46948f063f', 'COPYRIGHT', 'terms-of-use', 'Terms of use', NULL, 1, 'This is the content of the first custom page.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('e838f92c-5239-4af6-9c78-8237622e86ed', 'COMMUNITY', 'home', 'Home', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', 1, 'This is the home page of the communauté de l''anneau.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('79998ea6-eb73-407c-b141-e49e12a18f0a', 'COMMUNITY', 'about', 'About', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', 2, 'This is the about page of the communauté de l''anneau.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('d0cc2fd4-8bbc-4a08-a289-0456a64cb9c1', 'COMMUNITY', 'contact', 'Contact', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', 3, 'This is the contact page of the communauté de l''anneau.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('37e72da5-07d8-4faa-81ce-7c8fb97efabe', 'COMMUNITY', 'how-to-borrow', 'How to borrow', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', 4, 'This is the how to borrow page of the communauté de l''anneau.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('e621e40c-c0ef-4e4b-b2bf-af893e87e07a', 'COMMUNITY', 'home', 'Home', '14e3a30e-aa46-4ff9-9cd6-cb9931db8be7', 1, 'This is the home page of the terre de laya.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('2d996c19-6503-4072-a4c9-4734a5514349', 'COMMUNITY', 'about', 'About', '14e3a30e-aa46-4ff9-9cd6-cb9931db8be7', 2, 'This is the about page of the terre de laya.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('b03c0e77-2be4-4a0a-9e60-54ba2d218293', 'COMMUNITY', 'contact', 'Contact', '14e3a30e-aa46-4ff9-9cd6-cb9931db8be7', 3, 'This is the contact page of the terre de laya.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('2c102be5-bc06-414c-84ca-267647d74bbd', 'COMMUNITY', 'how-to-borrow', 'How to borrow', '14e3a30e-aa46-4ff9-9cd6-cb9931db8be7', 4, 'This is the how to borrow page of the terre de laya.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('ecf5dd06-871e-4cca-a3cc-e97afad44f86', 'FOOTER_LINKS', 'home', 'Home', 'b0f34a8c-3035-4fcf-83df-5071e3ac9640', 1, 'Bienvenue sur la page d''accueil du partage d''objects de Beaulieu.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('96147c22-327b-4c9e-bfdb-411517ce7677', 'FOOTER_LINKS', 'home', 'Home', '729ef545-6ddc-40e8-a6e0-d73b5b8ae1b6', 1, 'Bienvenue sur la page d''accueil du partage d''objects des 3 cités.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('cfb1bd61-32f3-4b19-a955-d5411923fefc', 'FOOTER_LINKS', 'home', 'Home', '54b63653-c802-42c7-b601-1def9aae13ef', 1, 'Bienvenue sur la page d''accueil du partage d''objects du quartier des rocs.');
-INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('34377c8d-d8ba-45b0-8799-59af2e1f795c', 'FOOTER_LINKS', 'home', 'Home', '4bdcd955-c382-4693-a2b7-ba3b5fcd4f21', 1, 'Bienvenue sur la page d''accueil du partage d''objects du quartier du centre-ville de Poitiers.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('b2413e60-e7a2-46f3-a9c8-314786f3d801', 'FOOTER_LINKS', 'my-neighborhood', 'My neighborhood', NULL, 0, 'This is the content of the first custom page.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('a8e47ad9-268d-4994-9f43-adcb3cc1a4cc', 'FOOTER_LINKS', 'how-borrowing-works', 'How borrowing works', NULL, 1, 'This is the content of the first custom page.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('f2b09674-6460-4e8c-b82f-7bb778288326', 'FOOTER_LINKS', 'share-give-an-object', 'Share/give an object', NULL, 2, 'This is the content of the first custom page.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('89a0d23b-2b12-49cf-ae42-46bc02b6cbdb', 'COPYRIGHT', 'privacy-policy', 'Privacy policy', NULL, 0, 'This is the content of the first custom page.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('962ea095-c70b-4ec5-ac3f-87d8fab9179a', 'COPYRIGHT', 'terms-of-use', 'Terms of use', NULL, 1, 'This is the content of the first custom page.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('7a075f87-4413-4a58-8862-aa8dec2eff31', 'COMMUNITY', 'home', 'Home', 'a8b2225c-0766-406c-94b0-9fda21e05218', 1, 'This is the home page of the communauté de l''anneau.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('0f322aa1-5e7a-40f8-af37-b9c090bcb45c', 'COMMUNITY', 'about', 'About', 'a8b2225c-0766-406c-94b0-9fda21e05218', 2, 'This is the about page of the communauté de l''anneau.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('52f5efbb-0166-40de-9a83-1a1ab19f1ccc', 'COMMUNITY', 'contact', 'Contact', 'a8b2225c-0766-406c-94b0-9fda21e05218', 3, 'This is the contact page of the communauté de l''anneau.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('093ebd78-3c32-4728-a615-e0ea3a910eaf', 'COMMUNITY', 'how-to-borrow', 'How to borrow', 'a8b2225c-0766-406c-94b0-9fda21e05218', 4, 'This is the how to borrow page of the communauté de l''anneau.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('dad7eb4c-da76-4289-b87e-9f4f6b0fa218', 'COMMUNITY', 'home', 'Home', 'fcbae48b-1bdc-4458-84d6-54a7e996db8e', 1, 'This is the home page of the terre de laya.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('f97bc9e5-f4c2-4c7e-8934-257fb6aaf264', 'COMMUNITY', 'about', 'About', 'fcbae48b-1bdc-4458-84d6-54a7e996db8e', 2, 'This is the about page of the terre de laya.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('42755112-b03f-447d-ab85-159ccbee9d7e', 'COMMUNITY', 'contact', 'Contact', 'fcbae48b-1bdc-4458-84d6-54a7e996db8e', 3, 'This is the contact page of the terre de laya.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('1b7a3778-5a18-4427-8888-031a9a7546c3', 'COMMUNITY', 'how-to-borrow', 'How to borrow', 'fcbae48b-1bdc-4458-84d6-54a7e996db8e', 4, 'This is the how to borrow page of the terre de laya.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('19d86a38-ff44-4589-ae0a-9b14bdb8f3d9', 'FOOTER_LINKS', 'home', 'Home', '36b63ace-d8b4-4ff6-8888-b48283721aab', 1, 'Bienvenue sur la page d''accueil du partage d''objects de Beaulieu.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('6b3bb99b-d176-4745-b099-786bde922049', 'FOOTER_LINKS', 'home', 'Home', 'e31ddb44-8596-4723-b52c-9152b27cee54', 1, 'Bienvenue sur la page d''accueil du partage d''objects des 3 cités.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('1a0e1346-b060-4497-b5af-e180cd89b968', 'FOOTER_LINKS', 'home', 'Home', 'a418f7f3-e853-4430-9bf5-c33440fa38cf', 1, 'Bienvenue sur la page d''accueil du partage d''objects du quartier des rocs.');
+INSERT INTO custom_pages (id, position, ref, title, community_id, display_order, content) VALUES ('ad8a1312-81a8-4033-b731-19228502b700', 'FOOTER_LINKS', 'home', 'Home', '02f7e795-5536-478a-8217-ec8e60405d83', 1, 'Bienvenue sur la page d''accueil du partage d''objects du quartier du centre-ville de Poitiers.');
 
 -- Community Members
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('231a3d7b-c3ca-445d-8e39-f81ca59258a8', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', '83663dee-dc69-4a05-90bc-143dd81848a1', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('c54474fb-c349-4a69-b344-125c52ac1eea', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', '78c02c45-a075-4593-a681-caae29a63c60', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('8d6adffa-8661-4b6f-b0e4-218a930abffd', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', 'cf3e665d-2af3-4754-b2b9-96b07e779b7c', 'ADMIN');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('9f63cbec-cb21-42bc-b2ae-081d7b4f6ccb', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', '8f0c73c0-c9e2-49b6-b282-6dacc7fbcf1c', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('039295b2-65bc-45dd-90da-3ab08e305b90', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', 'b022845e-303a-4fa9-afa5-41c01427fe69', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('fcef756f-ac0a-4042-9d5d-45522b6bb6ea', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', '925d9ed7-bd07-4427-8e58-4c6764dbf27e', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('e54dc744-a519-42ef-954f-409f884ba4a9', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', '421d3fc8-be39-45c6-a721-e3e481a5fbd0', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('9c083cce-9d2c-4a8f-a085-d0b1c7054691', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', '537dcb74-b2c7-495a-9507-b086f639ee68', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('c4c87a3f-50c9-446c-9bda-b90687fde491', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', 'f7abb7fc-6470-4bf2-b3d0-006539b98587', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('7a3bdeb1-b6c2-4e77-831c-630ac8259d43', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', '0e843a42-eb11-4106-8d3e-8259b0b1bfa7', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('afaac601-acd8-41a3-a9fc-d4d0caa41e54', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('cf5cae60-6846-4bc4-8442-f4844741fb30', 'e364780b-b09c-4a9f-9c5d-c31e477ca56e', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('647669bc-dfe1-4606-b6b8-adbccb39af6e', '14e3a30e-aa46-4ff9-9cd6-cb9931db8be7', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'ADMIN');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('37753ccb-32f2-4934-b980-3de7fcc3dc1a', '14e3a30e-aa46-4ff9-9cd6-cb9931db8be7', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('96bcc55e-1776-485c-a44e-a0d60a95ff9b', 'b0f34a8c-3035-4fcf-83df-5071e3ac9640', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'ADMIN');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('66a2c60a-1969-49e0-bede-d65c991a6816', 'b0f34a8c-3035-4fcf-83df-5071e3ac9640', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('446fc0b5-72c4-4cfb-a18d-9cf589d6eadc', '729ef545-6ddc-40e8-a6e0-d73b5b8ae1b6', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'ADMIN');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('b8e7dfa3-08a2-45f6-9c58-f827fb0e8341', '729ef545-6ddc-40e8-a6e0-d73b5b8ae1b6', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('47d867b1-53c4-4208-8e92-21107524e62b', '54b63653-c802-42c7-b601-1def9aae13ef', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'ADMIN');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('fccddc35-4bc7-400c-9078-23fc5fe712d2', '54b63653-c802-42c7-b601-1def9aae13ef', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'MEMBER');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('6126dadb-4400-4baf-afd5-ef6e2664e12a', '4bdcd955-c382-4693-a2b7-ba3b5fcd4f21', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'ADMIN');
-INSERT INTO community_members (id, community_id, user_id, role) VALUES ('40b9e5b1-0a14-4138-9db5-4c821627593a', '4bdcd955-c382-4693-a2b7-ba3b5fcd4f21', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('061a78ff-6df6-432e-96f9-0abe6ba09eea', 'a8b2225c-0766-406c-94b0-9fda21e05218', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('fc8b5062-5ce0-4cd0-a7e8-c549ef6f9099', 'a8b2225c-0766-406c-94b0-9fda21e05218', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('d3f78665-8914-464f-b7c1-f7d0077bca09', 'a8b2225c-0766-406c-94b0-9fda21e05218', '60249cc9-5823-4a7c-88d7-4c67748dbb53', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('9a61a5e7-5ca4-44a9-8ed3-f58e0575899c', 'a8b2225c-0766-406c-94b0-9fda21e05218', 'd195fc96-b352-426e-b9db-e5296acec408', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('83102699-e2dd-4580-ad6e-d7ff08d81211', 'a8b2225c-0766-406c-94b0-9fda21e05218', 'd34ce04c-9a79-4d4d-a533-88d4266c3c3b', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('3f0f4f59-b9b9-4b40-98b5-e42c5d3738ec', 'a8b2225c-0766-406c-94b0-9fda21e05218', '6d73f03d-50fc-4b69-8ceb-d7f9791a13ba', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('e9caf139-6246-46ec-83b7-18ef35e73f05', 'a8b2225c-0766-406c-94b0-9fda21e05218', '9c26ac0d-ab26-411b-8238-0f7a130bf967', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('421d4d89-cd77-408a-8868-d3cc5973cf1e', 'a8b2225c-0766-406c-94b0-9fda21e05218', 'da1a2634-143a-4028-b821-6459f9cdd6a2', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('886c0f5f-5311-43bf-90c1-a3fc1b0c7dd1', 'a8b2225c-0766-406c-94b0-9fda21e05218', 'cae3e61f-06fe-4469-a15f-f9e2d60a7b6a', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('c87c45bd-ab83-43e8-a16e-cf537d7ca7c5', 'a8b2225c-0766-406c-94b0-9fda21e05218', '885df314-dac1-48fe-a33e-e2b792c3e7c7', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('169d358a-b6b3-4b5d-95be-6ed8083b18f6', 'a8b2225c-0766-406c-94b0-9fda21e05218', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('02874c73-8a28-4f47-9564-aac95bcf4aaf', 'a8b2225c-0766-406c-94b0-9fda21e05218', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('284dcea6-65dd-4b63-ac45-a424b481d17c', 'a8b2225c-0766-406c-94b0-9fda21e05218', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('9bdbe1b0-2d34-464c-b4ea-1e4e79f470b1', 'a8b2225c-0766-406c-94b0-9fda21e05218', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('4ed8a032-db98-452a-be9a-098db3b74fe4', 'fcbae48b-1bdc-4458-84d6-54a7e996db8e', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('703eae72-7051-4ea7-a60a-51c9eb35e608', 'fcbae48b-1bdc-4458-84d6-54a7e996db8e', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('06e841d8-7478-4aa7-bfa2-65210f896e1f', 'fcbae48b-1bdc-4458-84d6-54a7e996db8e', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('0745c4bb-b32c-420b-803c-717c67bf7808', 'fcbae48b-1bdc-4458-84d6-54a7e996db8e', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('3d9e32e3-efa0-470e-be09-52ecbbe97174', '36b63ace-d8b4-4ff6-8888-b48283721aab', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('15e72456-e17b-4ef6-97bb-13397f1007d4', '36b63ace-d8b4-4ff6-8888-b48283721aab', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('c9afa543-aabb-4fdd-9735-bd5ab4bd8459', 'e31ddb44-8596-4723-b52c-9152b27cee54', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('0d51d61a-f35a-45fa-9ec9-a13d67e4d8be', 'e31ddb44-8596-4723-b52c-9152b27cee54', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('e84bfd4b-bf58-4da3-b919-46e40cbdac32', 'e31ddb44-8596-4723-b52c-9152b27cee54', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('ae8fbf2b-10c5-4245-9360-62dbabd9261d', 'e31ddb44-8596-4723-b52c-9152b27cee54', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('1418759f-5ca1-40f8-8588-0c3f30bd135b', 'a418f7f3-e853-4430-9bf5-c33440fa38cf', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('72d66a02-c684-4b4b-87f6-0d4c40a19406', 'a418f7f3-e853-4430-9bf5-c33440fa38cf', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('e67f2a76-40bd-4d84-a5e1-74548f9a1121', 'a418f7f3-e853-4430-9bf5-c33440fa38cf', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('e8e5e34b-e0cb-45c2-a555-5e16f4ff4b75', 'a418f7f3-e853-4430-9bf5-c33440fa38cf', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('7be30a0e-b611-481c-a5af-c4a21892313e', '02f7e795-5536-478a-8217-ec8e60405d83', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('d95fa92c-d352-41cc-a6fd-2fc89ecd3723', '02f7e795-5536-478a-8217-ec8e60405d83', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'MEMBER');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('82d43f3e-bd1e-4597-a784-4c895ba6d80e', '02f7e795-5536-478a-8217-ec8e60405d83', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO community_members (id, community_id, user_id, role) VALUES ('7a762401-ccc9-4744-b538-6554b436b9c8', '02f7e795-5536-478a-8217-ec8e60405d83', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
 
 -- Library Members
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('614b8abf-d1b0-4b03-ac3a-9dd6098d4f38', '974049e6-e693-4a40-9ecc-0a79f092ff7e', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'ADMIN');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('03dac9f9-e19c-4ca4-b0c2-73843a14060d', '974049e6-e693-4a40-9ecc-0a79f092ff7e', '78c02c45-a075-4593-a681-caae29a63c60', 'MEMBER');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('ddb864a0-f345-4948-a46d-0a23616bad9c', 'c68f1ce5-e262-4038-811e-012abd447854', '6578213f-2b84-49f6-9f62-32a2e6d548c6', 'ADMIN');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('3bd7c733-c6f6-46d1-9b25-55abe591b721', 'c68f1ce5-e262-4038-811e-012abd447854', 'e562714c-3e32-4aa2-9237-e512ab1913e9', 'MEMBER');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('0a2b6b3a-c217-4531-8a3c-3b1b990e16fa', '02946827-6f72-4501-b347-6bf1b8d00c2c', '83663dee-dc69-4a05-90bc-143dd81848a1', 'ADMIN');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('f4fb34a7-5512-4ab1-9c57-453669292c57', '02946827-6f72-4501-b347-6bf1b8d00c2c', '78c02c45-a075-4593-a681-caae29a63c60', 'MEMBER');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('4f84ada0-44ac-4f29-9e6b-a0b43ded8b25', '361cb644-f5d9-4b7e-ad09-b74f9923de1c', '83663dee-dc69-4a05-90bc-143dd81848a1', 'ADMIN');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('a8dddb94-4261-4c93-b4ed-6092a5ddfafe', '361cb644-f5d9-4b7e-ad09-b74f9923de1c', '78c02c45-a075-4593-a681-caae29a63c60', 'MEMBER');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('186a7de7-8965-40bc-99ba-342dc637bfb0', '33bb0afa-9f4a-4202-8a5f-55bc33bb5103', '83663dee-dc69-4a05-90bc-143dd81848a1', 'ADMIN');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('894ca616-b1f5-4a6e-9c87-8e524f761bf7', '33bb0afa-9f4a-4202-8a5f-55bc33bb5103', '78c02c45-a075-4593-a681-caae29a63c60', 'MEMBER');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('8a8f91e5-1210-4003-b6c2-9c27491ca650', '1d318f21-7b9b-47e9-8269-0699cbe9a115', '83663dee-dc69-4a05-90bc-143dd81848a1', 'ADMIN');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('cd66fd07-8786-4592-9443-0e75b945d781', '1d318f21-7b9b-47e9-8269-0699cbe9a115', '78c02c45-a075-4593-a681-caae29a63c60', 'MEMBER');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('6689a386-0e52-49a7-8a46-cec801bbdb0a', '553ff656-cff4-481d-839e-bd2d1c12a609', '83663dee-dc69-4a05-90bc-143dd81848a1', 'ADMIN');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('3da470ad-debf-4e73-90b1-072f79adabcb', '553ff656-cff4-481d-839e-bd2d1c12a609', '78c02c45-a075-4593-a681-caae29a63c60', 'MEMBER');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('70783a69-36b0-4fa5-9fc0-f30408394657', 'bc3c1f02-4c14-48b4-b700-06786a0c9cc0', '83663dee-dc69-4a05-90bc-143dd81848a1', 'ADMIN');
-INSERT INTO library_members (id, library_id, user_id, role) VALUES ('920678df-4d2e-4db0-a540-4aca2d8f5ea7', 'bc3c1f02-4c14-48b4-b700-06786a0c9cc0', '78c02c45-a075-4593-a681-caae29a63c60', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('c647bfd0-9843-4ce0-9f40-8ed0a3d09dda', '2503ad7a-069c-4e2a-ae79-a876e1257557', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('13163248-a988-4d0b-95cb-b73080745de1', '2503ad7a-069c-4e2a-ae79-a876e1257557', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('ead6b2cb-5bbf-4261-b887-86d057c3242b', '2503ad7a-069c-4e2a-ae79-a876e1257557', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('bebc2f4e-d72d-4cba-8681-db6212f0f459', '2503ad7a-069c-4e2a-ae79-a876e1257557', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('91f4c479-5436-4fc5-8581-2fa46286bc15', 'b7120bf8-d482-4b95-b6c0-2324d480ef3a', '836a0e4d-8bc5-4cdc-b2a0-f98dd04080b5', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('2c9c1f39-3623-4a82-9fa3-9032ae68e2d3', 'b7120bf8-d482-4b95-b6c0-2324d480ef3a', 'bcca1fa5-ef15-4f52-a923-3dccc66a95eb', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('bc8a778a-656a-49ac-9e10-384bc037ec6f', 'b7120bf8-d482-4b95-b6c0-2324d480ef3a', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('f3af59bc-6210-47e5-910d-1760c5cd8c37', 'b7120bf8-d482-4b95-b6c0-2324d480ef3a', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('4ce40cc5-f2ee-4d16-ade5-ff6242463215', '9780620e-2ceb-4734-89fe-45cc430c0b84', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('6c9495af-ff92-41f7-a32d-f10362ff83e5', '9780620e-2ceb-4734-89fe-45cc430c0b84', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('e581e98d-1d39-4ab3-9a0f-fbeb5db8a814', '9780620e-2ceb-4734-89fe-45cc430c0b84', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('f6fa86b6-ba5a-4a4a-a4a0-9e62ef1b6023', '9780620e-2ceb-4734-89fe-45cc430c0b84', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('c6d4a4bc-45b6-4800-b0e8-cb96d4373947', '411c6d81-4c32-4212-8103-e4beaf252e3a', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('52b5f261-2b8f-4790-b4fd-f5141751ee1e', '411c6d81-4c32-4212-8103-e4beaf252e3a', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('01323fbe-5417-468b-9c50-7c83fd30f22e', '411c6d81-4c32-4212-8103-e4beaf252e3a', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('182cc9cd-bb84-410e-b575-7bbacfd700e2', '411c6d81-4c32-4212-8103-e4beaf252e3a', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('6ca5ac7a-733d-4dce-8bd0-eb3ca0afad10', 'a27a7cd0-6b5b-489d-aff3-48fec80c2327', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('379b811a-96eb-40bc-9a7a-5533f587671d', 'a27a7cd0-6b5b-489d-aff3-48fec80c2327', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('05581a08-c56a-47d7-a32d-15953509a466', 'a27a7cd0-6b5b-489d-aff3-48fec80c2327', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('00a40290-657d-4170-9a42-8ab9ab339a8a', 'a27a7cd0-6b5b-489d-aff3-48fec80c2327', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('3853c396-8b06-46cf-91b0-01e65b64a6f9', 'e21e04ac-58e4-4f82-b693-2c9d480b0a73', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('a1aad141-0ae7-4e9e-8c17-fb2867b861e9', 'e21e04ac-58e4-4f82-b693-2c9d480b0a73', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('8f0f2af9-157c-48b4-b00a-66e6ab155be7', 'e21e04ac-58e4-4f82-b693-2c9d480b0a73', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('6ec662d9-e400-4346-823c-46b848b93080', 'e21e04ac-58e4-4f82-b693-2c9d480b0a73', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('e174892e-8452-4cf4-9d27-e6bc817bf08c', '4c8afacc-121e-421c-89d5-e83d9b6315c0', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('e5976599-01e5-4ca7-be13-784383c06bbb', '4c8afacc-121e-421c-89d5-e83d9b6315c0', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('83ca3e50-90fb-4f33-80d8-62751daa9832', '4c8afacc-121e-421c-89d5-e83d9b6315c0', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('0fa9ea39-1f58-480e-97b3-5b7e9cac0b30', '4c8afacc-121e-421c-89d5-e83d9b6315c0', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('0659ec30-420a-48c9-85dc-550fc8f5d002', '318e4e5e-6857-4f7e-b518-ef92c8aab734', '432a6a46-b2a8-42d3-9e8a-b3bc0573db19', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('33ed98e7-4aab-467f-90ab-6995151dccaf', '318e4e5e-6857-4f7e-b518-ef92c8aab734', 'd1cfa2bd-38da-4159-b956-d2d125716257', 'MEMBER');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('0b5dcf1c-f82e-4b77-a9bb-7c73d853b773', '318e4e5e-6857-4f7e-b518-ef92c8aab734', 'c70a4017-e86a-457d-9ab8-e18be62ebeed', 'ADMIN');
+INSERT INTO library_members (id, library_id, user_id, role) VALUES ('36ebd9fc-210e-40f3-831d-97d8538907f0', '318e4e5e-6857-4f7e-b518-ef92c8aab734', '3862169b-55fa-44cb-b17e-d49eda9d8870', 'MEMBER');
 
